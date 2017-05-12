@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>vacation</title>
+    <link href='./main.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id='div_top'>
+      <h1>Instructions</h1>
+      <div>
+        <ul>
+          <li>Setup config values</li>
+          <li>Left click to toggle <span id='span_vacation_example'>vacation</span></li>
+          <li>Shift + Left click to toggle <span id='span_holiday_example'>holidays</span></li>
+        </ul>
+      </div>
+      <h1>Config</h1>
+      <table>
+        <tr><td>Personal choice hours:</td><td><input type='number' id='input_pch' oninput='v.readConfig();'></td></tr>
+        <tr><td>Vacation hours earned per day:</td><td><input type='number' id='input_hpd' oninput='v.readConfig();'></td></tr>
+        <tr><td>Hours caried from previous year:</td><td><input type='number' id='input_hpy' oninput='v.readConfig();'></td></tr>
+        <tr><td>Accrual maximum:</td><td><input type='number' id='input_am' oninput='v.readConfig();'></td></tr>
+      </table>
+      <div>
+        <div>
+          <textarea rows='4' cols='50' id='textarea_xfer'></textarea>
+        </div>
+        <button type='button' id='button_export'>Export</button>
+        <button type='button' id='button_import'>Import</button>
+      </div>
+      <button type='button' id='button_reset'>Reset everything!</button><br>
+      <button type='button' id='button_hide'>Hide config</button>
+    </div>
+    <div id='div_config_button'>
+      <button type='button' id='button_config'>Config</button>
+    </div>
+    <div id='div_calendar_container'>
+    </div>
+    <div id='div_legend'>
+      <span id='span_vacation_legend'>vacation</span>
+      <span id='span_holiday_legend'>holiday</span>
+    </div>
+    <script src='./main.js'></script>
+  </body>
+</html>
