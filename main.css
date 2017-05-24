@@ -132,6 +132,7 @@ button {
 #div_legend {
   position: relative;
   left: 50px;
+  display: inline-block;
 }
 
 @media print {
