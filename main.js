@@ -185,7 +185,7 @@ var v = {
     src.style.outline = '2px solid #2f652f';
     src.style.zIndex = '100';
     if (e.shiftKey) {
-      v.spanInfo.innerHTML = 'Prior to ' + monthList[month] + ' ' + day + ', accumulated: ' + v.getAccumulatedDays(month, day) + ' (' + v.getAccumulatedHours(month, day).toFixed(3) + 'hrs), assigned: ' + v.getVacationAssigned(month, day);
+      v.spanInfo.innerHTML = 'Prior to ' + monthList[month] + ' ' + day + ' (#' + v.getDayNum(month, day) + '), accumulated: ' + v.getAccumulatedDays(month, day) + ' (' + v.getAccumulatedHours(month, day).toFixed(3) + 'hrs), assigned: ' + v.getVacationAssigned(month, day);
     } else {
       v.spanInfo.innerHTML = 'Prior to ' + monthList[month] + ' ' + day + ', accumulated: ' + v.getAccumulatedDays(month, day) + ', assigned: ' + v.getVacationAssigned(month, day);
     }
