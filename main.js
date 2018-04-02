@@ -79,7 +79,7 @@ var v = {
   },
   drawCalendar: function() {
     var c = document.getElementById('div_calendar_container');
-    var html = '<div><span id="span_year">2017</span>';
+    var html = `<div><span id="span_year">${v.state.year}</span>`;
     html += '<span id="span_info"></span></div>';
     var i;
     var d;
