@@ -199,7 +199,7 @@ var v = {
   getDayNum: function(month, day) {
     var firstDay = new Date(v.state.year, 0, 1);
     var targetDay = new Date(v.state.year, month, day);
-    return (targetDay - firstDay) / (60 * 60 * 24 * 1000);
+    return Math.round((targetDay - firstDay) / (60 * 60 * 24 * 1000));
   },
   getVacationAssigned(month, day) {
     var result = 0;
